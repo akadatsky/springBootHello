@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Map;
 
@@ -28,10 +29,10 @@ public class GreetingController {
     }
 
     @PostMapping
-    public String test(Map<String, Object> model) {
+    public @ResponseBody
+    String test(Map<String, Object> model) {
         return "test post";
     }
-
 
 
 }
