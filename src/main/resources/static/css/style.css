@@ -1,3 +1,6 @@
-body {
-    color: #F00;
+.message {
+  color: red;
+}
+.message:hover {
+  background-color: #FF0;
 }
